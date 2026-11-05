@@ -114,10 +114,11 @@ export default function Home() {
       <div className="entry-copy">
         <p className="entry-intro">{data.entrance.intro}</p>
         <h1 id="entry-title">{data.celebrant.name}</h1>
-        <p className="entry-tagline">{data.entrance.tagline}</p>
+        <p className="entry-tagline"><span className="entry-age-line">{data.entrance.tagline.prefix}{" "}<strong>{data.entrance.tagline.emphasis}</strong>{data.entrance.tagline.suffix}</span><span>{data.entrance.tagline.description}</span></p>
         <div className="entry-rule" aria-hidden="true"><span />✦<span /></div>
-        <button className="button primary entry-button" type="button" onClick={openInvitation} disabled={phase !== "closed"}>
-          {phase === "opening" ? data.entrance.opening : data.hero.cta}<ArrowUpRight size={17} />
+        <button className="button entry-button" type="button" onClick={openInvitation} disabled={phase !== "closed"}>
+          <span className="entry-play" aria-hidden="true">{phase === "opening" ? <Sparkles size={16} strokeWidth={1.5} /> : <Play size={14} fill="currentColor" strokeWidth={1} />}</span>
+          <span>{phase === "opening" ? data.entrance.opening : data.hero.cta}</span>
         </button>
         {data.music.enabled && <small className="entry-music-hint"><Music2 size={12} />{data.entrance.musicHint}</small>}
       </div>
