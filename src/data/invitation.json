@@ -1,0 +1,25 @@
+{
+  "metadata": { "title": "Mis XV · Constanza", "description": "Acompaña a Constanza a celebrar sus quince años el 26 de diciembre de 2026 en San Marcos, Guerrero." },
+  "celebrant": { "name": "Constanza", "occasion": "Mis quince años", "monogram": "C", "age": "XV" },
+  "event": { "date": "2026-12-26T17:00:00-06:00", "endDate": "", "timeZone": "America/Mexico_City", "locale": "es-MX", "dateLabel": "Sábado 26 de diciembre de 2026", "shortDate": "26 / 12 / 2026", "city": "San Marcos, Guerrero", "calendarTitle": "Los XV de Constanza", "calendarDescription": "Celebremos los quince años de Constanza. Misa a las 17:00 h en San Marcos Evangelista, Capilla de la Santa Cruz. Fiesta en Jardín Los Tulipanes; horario por confirmar." },
+  "navigation": { "enabled": false, "details": "La celebración", "rsvp": "Confirmar asistencia", "menuLabel": "Navegación principal" },
+  "entrance": { "intro": "Esta noche tiene tu nombre en la lista", "tagline": "Mis XV. Nuestra noche para brillar.", "opening": "Que comience la magia…", "musicHint": "Entra y deja que suene la música" },
+  "hero": { "eyebrow": "Estás invitado a una noche inolvidable", "title": "Una noche para", "accent": "brillar.", "description": "Quince años, mil sueños y una pista de baile. Solo faltas tú.", "cta": "Descubre la celebración", "detailsCta": "Ver los detalles", "scroll": "Que comience la magia", "edition": "Noche disco · Edición XV" },
+  "music": { "src": "/music/disco.mp3", "enabled": true, "volume": 0.35, "play": "Poner música", "pause": "Pausar música", "unavailable": "La música estará disponible pronto." },
+  "countdown": { "title": "La cuenta regresiva para bailar", "labels": ["Días", "Horas", "Minutos", "Segundos"], "finished": "¡Llegó el gran día!" },
+  "welcome": { "heading": "Los mejores momentos se viven acompañados.", "message": "Hay noches que se quedan para siempre en el corazón. Quiero que seas parte de la mía: una celebración llena de música, destellos y las personas que más quiero.", "signature": "Con cariño, Constanza" },
+  "family": { "parentsLabel": "Con el amor de mis papás", "parents": ["Bladimir Neftali López Lorenzo", "Ma. Edith Vázquez Agatón"], "godparentsLabel": "Y la compañía de mis padrinos", "godparents": ["Gustavo Guzmán Palma", "Martha Lilia Vázquez Agatón"] },
+  "venues": { "heading": "Nos vemos en la pista", "intro": "Dos momentos especiales. Una noche que recordar.", "mapLabel": "Cómo llegar", "items": [
+    { "type": "ceremony", "label": "La ceremonia", "name": "San Marcos Evangelista", "time": "17:00 h", "address": "Capilla de la Santa Cruz", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Capilla+de+la+Santa+Cruz+San+Marcos+Guerrero", "note": "Ubicación exacta por confirmar." },
+    { "type": "party", "label": "La celebración", "name": "Jardín Los Tulipanes", "time": "Horario por confirmar", "address": "Calle Tulipanes S/N, Col. Jardín, San Marcos, Gro.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Jardin+Los+Tulipanes+Calle+Tulipanes+Colonia+Jardin+San+Marcos+Guerrero", "note": "" }
+  ] },
+  "schedule": { "heading": "El ritmo de la noche", "items": [
+    { "time": "17:00", "title": "Ceremonia", "description": "Un momento para agradecer.", "icon": "church" },
+    { "time": "Por confirmar", "title": "La celebración", "description": "Nos vemos en Jardín Los Tulipanes.", "icon": "music" }
+  ] },
+  "dressCode": { "heading": "Vístete para brillar", "style": "Código de vestimenta por confirmar", "description": "Pronto compartiremos los detalles para acompañarnos en esta noche tan especial.", "note": "", "colors": [], "colorsLabel": "" },
+  "gifts": { "heading": "El mejor regalo es tenerte aquí", "description": "Tu compañía es lo más importante para mí.", "label": "" },
+  "rsvp": { "heading": "¿Bailamos?", "description": "Guárdame un lugar en tus planes. Pronto compartiremos el contacto y la fecha límite para confirmar tu asistencia.", "phone": "", "maxGuests": 5, "nameLabel": "Tu nombre completo", "namePlaceholder": "¿Cómo te llamas?", "guestsLabel": "Número de personas", "attendanceLabel": "¿Nos acompañas?", "yes": "¡Sí, ahí estaré!", "no": "No podré asistir", "button": "Confirmar por WhatsApp", "note": "Confirmaciones disponibles próximamente.", "message": "¡Hola! Soy {name}. {attendance} Personas en total: {guests}. Gracias por invitarme a los XV de {celebrant}.", "acceptance": "Confirmo mi asistencia.", "decline": "Esta vez no podré acompañarte.", "guestSingular": "persona", "guestPlural": "personas" },
+  "calendar": { "button": "Guardar la fecha", "filename": "xv-constanza.ics" },
+  "footer": { "message": "La vida es una pista de baile.", "closing": "Nos vemos bajo la esfera disco.", "demo": "Próximamente más detalles" }
+}
