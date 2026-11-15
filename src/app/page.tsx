@@ -18,10 +18,10 @@ function DiscoBall({ id = "invitation" }: { id?: string }) {
       const x = 150 - Math.cos(longitude) * radius;
       const width = (Math.cos(longitude) - Math.cos(next)) * radius;
       const light = 24 + Math.sin(col * 1.7 + row * 3.2) * 15 + Math.sin(longitude) * 32;
-      tiles.push(<rect key={`${row}-${col}`} x={round(x)} y={round(y - height / 2)} width={round(Math.max(0, width - 1.1))} height={round(height - 1.3)} fill={`hsl(40 ${20 + (row * col % 25)}% ${round(light)}%)`} />);
+      tiles.push(<rect key={`${row}-${col}`} x={round(x)} y={round(y - height / 2)} width={round(Math.max(0, width - 1.1))} height={round(height - 1.3)} fill={`hsl(226 ${5 + (row * col % 12)}% ${round(light + 10)}%)`} />);
     }
   }
-  return <div className="disco-scene" aria-hidden="true"><div className="disco-rays" /><div className="disco-cord" /><svg className="disco-ball" viewBox="0 0 300 300"><defs><clipPath id={`${id}-sphere`}><circle cx="150" cy="150" r="147" /></clipPath><radialGradient id={`${id}-shine`} cx="35%" cy="30%"><stop stopColor="#fff4c6" stopOpacity=".5" /><stop offset=".45" stopColor="#d6ae60" stopOpacity="0" /><stop offset="1" stopColor="#000" stopOpacity=".7" /></radialGradient></defs><g clipPath={`url(#${id}-sphere)`}><circle cx="150" cy="150" r="148" fill="#221c11" />{tiles}<circle cx="150" cy="150" r="148" fill={`url(#${id}-shine)`} /></g></svg><span className="glint glint-one">✦</span><span className="glint glint-two">✦</span><span className="glint glint-three">✧</span></div>;
+  return <div className="disco-scene" aria-hidden="true"><div className="disco-rays" /><div className="disco-cord" /><svg className="disco-ball" viewBox="0 0 300 300"><defs><clipPath id={`${id}-sphere`}><circle cx="150" cy="150" r="147" /></clipPath><radialGradient id={`${id}-shine`} cx="34%" cy="29%"><stop stopColor="#ffffff" stopOpacity=".72" /><stop offset=".44" stopColor="#eef1fa" stopOpacity=".07" /><stop offset="1" stopColor="#222536" stopOpacity=".48" /></radialGradient></defs><g clipPath={`url(#${id}-sphere)`}><circle cx="150" cy="150" r="148" fill="#444755" />{tiles}<circle cx="150" cy="150" r="148" fill={`url(#${id}-shine)`} /></g></svg><span className="glint glint-one">✦</span><span className="glint glint-two">✦</span><span className="glint glint-three">✧</span></div>;
 }
 
 function Countdown() {
