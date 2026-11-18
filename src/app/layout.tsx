@@ -1,9 +1,16 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import data from "@/data/invitation.json";
 import "./globals.css";
 
+export const viewport: Viewport = {
+  themeColor: "#f8f8fa",
+  colorScheme: "light",
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.SITE_URL ?? "https://xv-constanza-tau.vercel.app"),
+  metadataBase: new URL(
+    process.env.SITE_URL ?? "https://xv-constanza-tau.vercel.app",
+  ),
   title: data.metadata.title,
   description: data.metadata.description,
   openGraph: {
@@ -15,6 +22,12 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es"><body>{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="es">
+      <body>{children}</body>
+    </html>
+  );
 }
