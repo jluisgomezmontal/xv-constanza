@@ -1,7 +1,7 @@
 {
   "metadata": { "title": "Mis XV · Constanza", "description": "Acompaña a Constanza a celebrar sus quince años el 26 de diciembre de 2026 en San Marcos, Guerrero." },
   "celebrant": { "name": "Constanza", "occasion": "Mis quince años", "monogram": "C", "age": "XV" },
-  "event": { "date": "2026-12-26T17:00:00-06:00", "endDate": "", "timeZone": "America/Mexico_City", "locale": "es-MX", "dateLabel": "Sábado 26 de diciembre de 2026", "shortDate": "26 / 12 / 2026", "city": "San Marcos, Guerrero", "calendarTitle": "Los XV de Constanza", "calendarDescription": "Celebremos los quince años de Constanza. Misa a las 17:00 h en San Marcos Evangelista, Capilla de la Santa Cruz. Fiesta en Jardín Los Tulipanes; horario por confirmar." },
+  "event": { "date": "2026-12-26T17:00:00-06:00", "endDate": "", "timeZone": "America/Mexico_City", "locale": "es-MX", "dateLabel": "Sábado 26 de diciembre de 2026", "shortDate": "26 / 12 / 2026", "city": "San Marcos, Guerrero", "calendarTitle": "Los XV de Constanza", "calendarDescription": "Celebremos los quince años de Constanza. Misa a las 17:00 h en la Capilla de la Santa Cruz, Col. Santa Cruz. Fiesta en el Salón de Fiestas Tulipanes, con horario por confirmar." },
   "navigation": { "enabled": false, "details": "La celebración", "rsvp": "Confirmar asistencia", "menuLabel": "Navegación principal" },
   "entrance": { "intro": "Esta noche tiene tu nombre en la lista", "tagline": { "prefix": "Mis", "emphasis": "XV", "suffix": ".", "description": "Nuestra noche para brillar." }, "opening": "Que comience la magia…", "musicHint": "Entra y deja que suene la música" },
   "hero": { "eyebrow": "Estás invitado a una noche inolvidable", "title": "Una noche para", "accent": "brillar.", "description": "Quince años, mil sueños y una pista de baile. Solo faltas tú.", "cta": "Descubre la celebración", "detailsCta": "Ver los detalles", "scroll": "Que comience la magia", "edition": "Noche disco · Edición XV" },
@@ -10,12 +10,12 @@
   "welcome": { "heading": "Los mejores momentos se viven acompañados.", "message": "Hay noches que se quedan para siempre en el corazón. Quiero que seas parte de la mía: una celebración llena de música, destellos y las personas que más quiero.", "signature": "Con cariño, Constanza" },
   "family": { "parentsLabel": "Con el amor de mis papás", "parents": ["Bladimir Neftali López Lorenzo", "Ma. Edith Vázquez Agatón"], "godparentsLabel": "Y la compañía de mis padrinos", "godparents": ["Gustavo Guzmán Palma", "Martha Lilia Vázquez Agatón"] },
   "venues": { "heading": "Nos vemos en la pista", "intro": "Dos momentos especiales. Una noche que recordar.", "mapLabel": "Cómo llegar", "items": [
-    { "type": "ceremony", "label": "La ceremonia", "name": "San Marcos Evangelista", "time": "17:00 h", "address": "Capilla de la Santa Cruz", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Capilla+de+la+Santa+Cruz+San+Marcos+Guerrero", "note": "Ubicación exacta por confirmar." },
-    { "type": "party", "label": "La celebración", "name": "Jardín Los Tulipanes", "time": "Horario por confirmar", "address": "Calle Tulipanes S/N, Col. Jardín, San Marcos, Gro.", "mapUrl": "https://www.google.com/maps/search/?api=1&query=Jardin+Los+Tulipanes+Calle+Tulipanes+Colonia+Jardin+San+Marcos+Guerrero", "note": "" }
+    { "type": "ceremony", "label": "La ceremonia", "name": "Capilla de la Santa Cruz", "time": "17:00 h", "address": "Col. Santa Cruz, San Marcos, Gro.", "mapUrl": "https://maps.app.goo.gl/Fv344E57QaxSfBBv8?g_st=ic", "note": "" },
+    { "type": "party", "label": "La celebración", "name": "Salón de Fiestas Tulipanes", "time": "Horario por confirmar", "address": "Clavel 2, Col. Jardín, San Marcos, Gro.", "mapUrl": "https://maps.app.goo.gl/CBVJ8J9G4aGJEF4DA?g_st=ic", "note": "" }
   ] },
   "schedule": { "heading": "El ritmo de la noche", "items": [
     { "time": "17:00", "title": "Ceremonia", "description": "Un momento para agradecer.", "icon": "church" },
-    { "time": "Por confirmar", "title": "La celebración", "description": "Nos vemos en Jardín Los Tulipanes.", "icon": "music" }
+    { "time": "Por confirmar", "title": "La celebración", "description": "Nos vemos en el Salón de Fiestas Tulipanes.", "icon": "music" }
   ] },
   "dressCode": { "heading": "Vístete para brillar", "style": "Código de vestimenta por confirmar", "description": "Pronto compartiremos los detalles para acompañarnos en esta noche tan especial.", "note": "", "colors": [], "colorsLabel": "" },
   "gifts": { "heading": "El mejor regalo es tenerte aquí", "description": "Tu compañía es lo más importante para mí.", "label": "" },
