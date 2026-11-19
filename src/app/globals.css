@@ -3,10 +3,12 @@
 :root {
   --paper: #f8f8fa;
   --surface: #ffffff;
-  --accent: #505666;
+  --accent: #806025;
+  --gold: #b58c45;
+  --gold-light: #f2e3bd;
   --ink: #252631;
   --muted: #5d6170;
-  --line: #535c742d;
+  --line: #b58c4538;
   --serif: "Cormorant Garamond", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
 }
@@ -976,7 +978,7 @@ html.invitation-locked body {
 .entry-frame {
   position: absolute;
   inset: 12px;
-  border: 1px solid var(--line);
+  border: 1px solid #b58c4566;
   pointer-events: none;
   transition: opacity 0.35s;
 }
@@ -986,10 +988,10 @@ html.invitation-locked body {
   inset: clamp(54px, 11dvh, 108px) 10px -1px;
   max-width: 540px;
   margin-inline: auto;
-  border: 1px solid #fff;
+  border: 1px solid #ddc797;
   border-radius: 50% 50% 0 0 / 190px 190px 0 0;
   background: linear-gradient(180deg, #fff 38%, #f8f8facc);
-  box-shadow: 0 -12px 45px #717b9517;
+  box-shadow: 0 -12px 45px #b58c4514;
 }
 .entry-topline {
   display: flex;
@@ -1060,28 +1062,47 @@ html.invitation-locked body {
 .entry-rule span {
   width: 52px;
   height: 1px;
-  background: var(--line);
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
 }
 .entry-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
   min-height: 58px;
   min-width: 258px;
   gap: 14px;
   padding: 9px 25px 9px 12px;
-  border: 1px solid #50566680;
+  border: 1px solid var(--gold);
   border-radius: 999px;
-  background: linear-gradient(120deg, #50566612, #50566604);
+  background: linear-gradient(120deg, #f2e3bd55, #ffffffcc);
   color: var(--ink);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.025em;
   box-shadow:
     inset 0 1px 0 #ffffffac,
-    0 6px 24px #3c42531a;
+    0 6px 24px #b58c451a;
   transition:
     border-color 0.25s,
     background 0.25s,
     box-shadow 0.25s,
     transform 0.25s;
+}
+.entry-button::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 45%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, #f2e3bdcc, transparent);
+  transform: translateX(-200%) skewX(-20deg);
+  animation: gold-reflection 1.8s ease-in-out 0.7s 1 both;
+}
+@keyframes gold-reflection {
+  to {
+    transform: translateX(400%) skewX(-20deg);
+  }
 }
 .entry-play {
   display: grid;
@@ -1089,10 +1110,10 @@ html.invitation-locked body {
   flex-shrink: 0;
   width: 36px;
   height: 36px;
-  border: 1px solid #50566640;
+  border: 1px solid #b58c4566;
   border-radius: 50%;
   color: var(--accent);
-  background: #5056660b;
+  background: #f2e3bd66;
   transition:
     background 0.25s,
     color 0.25s;
@@ -1103,8 +1124,8 @@ html.invitation-locked body {
 @media (hover: hover) {
   .entry-button:hover {
     border-color: var(--accent);
-    background: #50566618;
-    box-shadow: 0 0 26px #50566612;
+    background: #f2e3bd77;
+    box-shadow: 0 0 26px #b58c4520;
     transform: translateY(-2px);
   }
   .entry-button:hover .entry-play {
@@ -1338,8 +1359,45 @@ html.invitation-locked body {
 
 .hero {
   background:
-    radial-gradient(ellipse at 50% 23%, #dce0ee 0%, transparent 63%),
+    radial-gradient(ellipse at 50% 23%, #f2e3bd70 0%, transparent 63%),
     linear-gradient(180deg, #eff0f5, var(--paper));
+}
+.primary {
+  background: linear-gradient(115deg, #765723, #89672c 55%, #765723);
+}
+.primary:hover {
+  background: #694c1d;
+}
+.glint-three {
+  color: var(--gold);
+  text-shadow: 0 0 18px #f2e3bd;
+}
+.countdown {
+  background: #f2e3bd20;
+}
+.section-spark,
+.tiny-star,
+.envelope-rain .envelope-drop {
+  color: var(--gold);
+}
+.venue-top {
+  color: var(--accent);
+}
+.gift-label {
+  border-bottom-color: var(--gold);
+}
+.name-line > span {
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.entry-gate.is-opening .entry-button::after {
+  animation: none;
+  opacity: 0;
+}
+@media (prefers-reduced-motion: reduce) {
+  .entry-button::after {
+    animation: none;
+    opacity: 0;
+  }
 }
 .hero-copy h1 {
   font-size: clamp(54px, 8vw, 100px);

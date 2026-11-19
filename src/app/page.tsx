@@ -466,7 +466,7 @@ export default function Home() {
           </section>
           <section className="venues section">
             <div className="section-heading">
-              <span className="tiny-star">✦</span>
+              <span className="tiny-star" aria-hidden="true">✦</span>
               <h2>{data.venues.heading}</h2>
               <p>{data.venues.intro}</p>
             </div>
